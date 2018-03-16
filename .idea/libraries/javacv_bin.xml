@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="javacv-bin">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Documentos/javacv-bin" />
+      <root url="jar://$USER_HOME$/Downloads/Imshow.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Documentos/javacv-bin/samples" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Documentos/javacv-bin" recursive="false" />
+  </library>
+</component>
