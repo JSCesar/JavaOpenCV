@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="703.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CController">
+  <tabs>
+    <Tab text="Main">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_carregar" layoutX="173.0" layoutY="322.0" mnemonicParsing="false" onAction="#carregaImagem" prefHeight="29.0" prefWidth="103.0" text="Carregar" />
+                  <Button fx:id="btn_gray" layoutX="447.0" layoutY="14.0" mnemonicParsing="false" onAction="#toGray" prefHeight="25.0" prefWidth="56.0" text="Gray" />
+                  <Button fx:id="btn_rgb" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#toRGB" prefHeight="71.0" prefWidth="47.0" text="RGB" />
+                  <Button fx:id="btn_xyz" layoutX="622.0" layoutY="14.0" mnemonicParsing="false" onAction="#toXYZ" prefHeight="25.0" prefWidth="53.0" text="XYZ" />
+                  <Button fx:id="btn_hsv" layoutX="447.0" layoutY="57.0" mnemonicParsing="false" onAction="#toHSV" prefHeight="19.0" prefWidth="57.0" text="HSV" />
+                  <Button fx:id="btn_hsl" layoutX="623.0" layoutY="57.0" mnemonicParsing="false" onAction="#toHSL" prefHeight="25.0" prefWidth="53.0" text="HSL" />
+                  <BorderPane layoutX="13.0" layoutY="14.0" prefHeight="239.0" prefWidth="312.0">
+                     <center>
+                        <ImageView fx:id="imApresentada" fitHeight="269.0" fitWidth="404.0" onMouseClicked="#createRec" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="446.0" layoutY="97.0" prefHeight="202.0" prefWidth="237.0">
+                     <center>
+                        <ImageView fx:id="histApresenta" fitHeight="173.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OuterTabController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="241.0" prefWidth="284.0">
+               <center>
+                  <ImageView fx:id="imApresenta" fitHeight="211.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="324.0" layoutY="84.0" prefHeight="173.0" prefWidth="182.0">
+               <center>
+                  <ImageView fx:id="histApresenta" fitHeight="129.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <Button fx:id="btn_save" layoutX="444.0" layoutY="21.0" mnemonicParsing="false" onAction="#saveFile" text="Salvar" />
+            <TextField fx:id="txt_save" layoutX="267.0" layoutY="21.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
